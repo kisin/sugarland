@@ -1,3 +1,42 @@
-<div id="wrapper">
-x
+<div class="wrap header">
+	<div class="row-fluid">
+		<div id="main"></div>
+		<div class="span5">
+			<div id="logo"></div>
+			<h2>
+				מועדון אקסלוסיבי ואיכותי
+			</h2>
+			<div class="top-text">
+				<p>
+					מחפשת מישהו שיתמוך בך?
+					<br/>
+					מחפש מישהי למפגשים רומנטיים?
+					<br/>
+					יצרנו בעבורכם את המקום האמיתי ביותר לכל עולם ההיכרויות והמפגשים האיכותיים.
+					<br/>
+				</p>
+			</div>
+		</div>
+		<div class="span5"></div>
+	</div>
+</div>
+
+<div class="wrap footer">
+	<div class="row-fluid">
+		<h3>
+			נודיע לך כשנפתח את האתר!
+		</h3>
+		<div class="form">
+			<%= form_tag create_path, :remote => true do %>
+				<input type="text" size="30" name="email" id="signup-email" placeholder="הזן את כתובת הדואר אלקטרוני שלך..." />
+				<select name="usertype" id="signup-type">
+					<option value="3">בחורת סוכר</option>
+					<option value="1">אבא סוכר</option>
+					<option value="2">אמא סוכר</option>					
+					<option value="4">בחור סוכר</option>
+				</select>
+				<button type="submit" id="signup-submit"></button>
+			<% end %>
+		</div>
+	</div>
 </div>

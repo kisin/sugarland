@@ -1,0 +1,14 @@
+var $e = $(".footer .row-fluid");
+$e.find(".error").remove();
+
+<% if @lead.errors.full_messages.empty? %>
+
+	$e.fadeOut("fast", function(){
+		$e.find("h3").html("תודה על ההתעניינות בנו!");
+		$e.find(".form").html("<p>ברגע שנעלה לאוויר, נפתח חשבון למענך וניידע אותך שאת/ה מוזמן להנות איתנו.</p><p>לשאלות נוספות <a href='mailto:support@mysugar.co.il'>support@mysugar.co.il</a></p>");
+		$e.fadeIn("fast");
+	});
+
+<% else %>
+	$e.find(".form").append("<p class='error'><%= @lead.errors.full_messages.last %></p>");
+<% end %>

@@ -8,10 +8,13 @@
 	<meta name="description" content="mysugar - the best personals and online dating service for sugar daddy and moms" />
 	<meta name="keywords" content="sugar daddy, sugar mom, gold digger, sugar, online dating, dating, dating site, dating service, personals, internet dating, millionair" />
 	<meta name="author" content="mysugar team" />
+	<link rel="shortcut icon" href="http://mysugar-assets.s3.amazonaws.com/images/favicon.ico">
+	<link rel="apple-touch-icon" href="http://mysugar-assets.s3.amazonaws.com/images/apple-touch-icon.png">
 
 	<%= stylesheet_link_tag      "application", :media => "all" %>
 	<%= javascript_include_tag "application" %>
 	<%= csrf_meta_tags %>
+	<%= yield(:head) %>
 </head>
 <body>
 

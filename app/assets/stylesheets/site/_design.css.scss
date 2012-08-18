@@ -1,3 +1,8 @@
+html
+{
+	height:100%;
+}
+
 body
 {
 	margin: 0;
@@ -8,9 +13,188 @@ body
 	font: italic 14px/18px Arial, Helvetica, sans-serif;	
 }
 
+/*
 #wrapper
 {
 	background: #00A0C6 url(/assets/bg.png) no-repeat 50% 0%;
-	height: 350px;
+	height: 100%;
 	overflow: hidden;	
+}
+
+#main
+{
+	background: transparent url(/assets/main.png) no-repeat 0 0;
+	width:465px;
+	height:798px;
+	position:absolute;
+	bottom:0;
+}
+
+#logo
+{
+	background: transparent url(/assets/logo.png) no-repeat 0 2px;
+	display:block;
+	width:186px;
+	height:36px;
+}
+
+.wrap
+{
+	width:600px;
+	margin:120px auto 0 auto;
+	direction:rtl;
+	text-align:right;
+}
+
+h1
+{
+
+}
+*/
+
+
+.row-fluid
+{
+	width:940px;
+	margin:0 auto;
+}
+
+.footer
+{
+	background: url(/assets/bg-bottom.jpg) repeat-x center top;
+	min-height: 700px;
+	overflow: hidden;
+
+	.row-fluid
+	{
+		width:740px;
+		margin-top:15px;
+	}
+}
+
+
+
+.wrap
+{
+	padding: 0px 20px;
+	direction:rtl;
+	text-align:right;
+}
+
+.header
+{
+	background: #00A0C6 url(/assets/bg.png) no-repeat 50% 0%;
+	padding: 75px 0;
+	position:relative;
+	height:310px;
+}
+
+#main
+{
+	background: transparent url(/assets/main.png) no-repeat 0 0;
+	width:465px;
+	height:460px;
+	position:absolute;
+	bottom:0;
+}
+
+#logo
+{
+	background: transparent url(/assets/logo.png) no-repeat 0 2px;
+	display:block;
+	width:186px;
+	height:36px;
+}
+
+h2
+{
+	font-size:24px;
+	font-weight:bold;
+	-moz-text-shadow: 0 1px 3px #02667e;
+	-webkit-text-shadow: 0 1px 3px #02667e;
+	-o-text-shadow: 0 1px 3px #02667e;
+	text-shadow: 0 1px 3px #02667e;
+}
+
+h3
+{
+	font-size:18px;
+	padding-bottom:8px;
+}
+
+.top-text
+{
+	margin-top:30px;
+
+	p
+	{
+		font-size:20px;
+		-moz-text-shadow: 0 1px 3px #02667e;
+		-webkit-text-shadow: 0 1px 3px #02667e;
+		-o-text-shadow: 0 1px 3px #02667e;
+		text-shadow: 0 1px 3px #02667e;		
+	}
+}
+
+
+.form
+{
+	overflow:hidden;
+}
+
+#signup-email
+{
+	float: right;
+	color: #ADAAAA;
+	font: italic 16px Helvetica;
+	background: url(/assets/bg-email.png) repeat-x;
+	padding: 8px;
+	height: 23px;
+	border: 1px solid #0E1319;
+	max-width: 320px;
+	width: 300px;
+	margin-left: 8px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#signup-type
+{
+	float:right;
+	width:160px;
+	max-width: 180px;
+	color: #ADAAAA;
+	font: italic 16px Helvetica;
+	background: url(/assets/bg-email.png) repeat-x;
+	padding: 8px;
+	height: 41px;
+	border: 1px solid #0E1319;
+	margin-left: 8px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+}
+
+#signup-submit 
+{
+	float: right;
+	width: 162px;
+	height: 45px;
+	background: url(/assets/bg-join-button.png) no-repeat;
+	border: 0px none;
+}
+
+.error
+{
+	display: block;
+	clear: both;
+	float: none;	
+	color:#ff0000;
+}
+
+a:hover
+{
+	color:#08C;
+	text-decoration:underline;
 }
