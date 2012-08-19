@@ -39,5 +39,10 @@ Sugarland::Application.configure do
 
 	#didnt manage running foreman on local machine (development) so i hardcoded the enviroment variables
 	ENV['FOG_DIRECTORY'] = 'mysugar-landing-assets'
+	ENV['AWS_ACCESS_KEY_ID'] = 'AKIAIQPQIW7MTKYA5MVA'
+	ENV['AWS_SECRET_ACCESS_KEY'] = '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'
+	ENV['FOG_PROVIDER'] = 'AWS'
+
+
 
 end
