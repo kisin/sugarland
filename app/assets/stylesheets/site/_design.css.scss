@@ -13,45 +13,6 @@ body
 	font: italic 14px/18px Arial, Helvetica, sans-serif;	
 }
 
-/*
-#wrapper
-{
-	background: #00A0C6 url(/assets/bg.png) no-repeat 50% 0%;
-	height: 100%;
-	overflow: hidden;	
-}
-
-#main
-{
-	background: transparent url(/assets/main.png) no-repeat 0 0;
-	width:465px;
-	height:798px;
-	position:absolute;
-	bottom:0;
-}
-
-#logo
-{
-	background: transparent url(/assets/logo.png) no-repeat 0 2px;
-	display:block;
-	width:186px;
-	height:36px;
-}
-
-.wrap
-{
-	width:600px;
-	margin:120px auto 0 auto;
-	direction:rtl;
-	text-align:right;
-}
-
-h1
-{
-
-}
-*/
-
 
 .row-fluid
 {
@@ -61,7 +22,7 @@ h1
 
 .footer
 {
-	background: url(/assets/bg-bottom.jpg) repeat-x center top;
+	background: url("http://mysugar-landing-assets.s3.amazonaws.com/images/bg-bottom.jpg") repeat-x center top;
 	min-height: 700px;
 	overflow: hidden;
 
@@ -83,7 +44,7 @@ h1
 
 .header
 {
-	background: #00A0C6 url(/assets/bg.png) no-repeat 50% 0%;
+	background: #00A0C6 url("http://mysugar-landing-assets.s3.amazonaws.com/images/bg.png") no-repeat 50% 0%;
 	padding: 75px 0;
 	position:relative;
 	height:310px;
@@ -91,7 +52,7 @@ h1
 
 #main
 {
-	background: transparent url(/assets/main.png) no-repeat 0 0;
+	background: transparent url("http://mysugar-landing-assets.s3.amazonaws.com/images/main.png") no-repeat 0 0;
 	width:465px;
 	height:460px;
 	position:absolute;
@@ -100,7 +61,7 @@ h1
 
 #logo
 {
-	background: transparent url(/assets/logo.png) no-repeat 0 2px;
+	background: transparent url("http://mysugar-landing-assets.s3.amazonaws.com/images/logo.png") no-repeat 0 2px;
 	display:block;
 	width:186px;
 	height:36px;
@@ -147,7 +108,7 @@ h3
 	float: right;
 	color: #ADAAAA;
 	font: italic 16px Helvetica;
-	background: url(/assets/bg-email.png) repeat-x;
+	background: url("http://mysugar-landing-assets.s3.amazonaws.com/images/bg-email.png") repeat-x;
 	padding: 8px;
 	height: 23px;
 	border: 1px solid #0E1319;
@@ -166,7 +127,7 @@ h3
 	max-width: 180px;
 	color: #ADAAAA;
 	font: italic 16px Helvetica;
-	background: url(/assets/bg-email.png) repeat-x;
+	background: url("http://mysugar-landing-assets.s3.amazonaws.com/images/bg-email.png") repeat-x;
 	padding: 8px;
 	height: 41px;
 	border: 1px solid #0E1319;
@@ -181,7 +142,7 @@ h3
 	float: right;
 	width: 162px;
 	height: 45px;
-	background: url(/assets/bg-join-button.png) no-repeat;
+	background: url("http://mysugar-landing-assets.s3.amazonaws.com/images/bg-join-button.png") no-repeat;
 	border: 0px none;
 }
 
