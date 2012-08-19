@@ -21,7 +21,7 @@ group :assets do
 end
 
 
-gem 'sass-rails',   '~> 3.1.4'
+gem 'sass-rails',   '3.1.4'
 gem 'bootstrap-sass'
 
 gem 'jquery-rails'
