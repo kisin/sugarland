@@ -15,6 +15,7 @@ class HomeController < ApplicationController
 
 		respond_to do |format|
 			if @lead.save
+				UserMailer.launch_register(@lead.email, @lead.usertype).deliver
 				format.js
 			else
 				format.js
