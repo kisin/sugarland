@@ -22,10 +22,6 @@ body
 
 .footer
 {
-	/*
-	background: url("http://mysugar-landing-assets.s3.amazonaws.com/images/bg-bottom.jpg") repeat-x center top;
-	min-height: 700px;
-	*/
 	overflow: hidden;
 
 	.row-fluid
@@ -92,6 +88,7 @@ h3
 	p
 	{
 		font-size:20px;
+		line-height:24px;
 		-moz-text-shadow: 0 1px 3px #02667e;
 		-webkit-text-shadow: 0 1px 3px #02667e;
 		-o-text-shadow: 0 1px 3px #02667e;
@@ -115,7 +112,7 @@ h3
 	height: 23px;
 	border: 1px solid #0E1319;
 	max-width: 320px;
-	width: 300px;
+	width: 280px;
 	margin-left: 8px;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -156,8 +153,29 @@ h3
 	color:#ff0000;
 }
 
+.loader
+{
+	margin-right:8px;
+	width:40px;
+	height:40px;
+}
+
 a:hover
 {
 	color:#08C;
 	text-decoration:underline;
+}
+
+input.disabled,
+select.disabled
+{
+	background-color: #efefef;
+	background-image: none;
+	color: #9c9e9c;
+	cursor: not-allowed;	
+}
+
+button.disabled
+{
+	cursor: not-allowed;	
 }

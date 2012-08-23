@@ -2,7 +2,13 @@ $(document).ready(function()
 {
 	$("form").submit(function(){
 		var $email = $("#signup-email"),
-			$usertype = $("#signup-type");
+			$usertype = $("#signup-type"),
+			$this = $(this);
+
+		if ($this.data("enable"))
+		{
+			return false;
+		}
 
 		if (!$email.val().length || !validateEmail($email.val()))
 		{
@@ -15,6 +21,15 @@ $(document).ready(function()
 			alert("אין צורך להתחכם, בחר/י את סוג המשתמש שאת/ה מעוניין בו");
 			return false;
 		}
+
+		//start working on form
+		$email.addClass("disabled");
+		$usertype.addClass("disabled");
+		$this
+			.data("enable", "1")
+			.append('<img class="loader" src="http://mysugar-landing-assets.s3.amazonaws.com/images/loader.gif" alt="אנא המתן" />');
+
+		return true;
 	});
 
 	function validateEmail(email) 
