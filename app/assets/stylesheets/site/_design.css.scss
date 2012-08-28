@@ -61,13 +61,13 @@ body
 {
 	background: transparent url("http://mysugar-landing-assets.s3.amazonaws.com/images/logo.png") no-repeat 0 2px;
 	display:block;
-	width:186px;
-	height:36px;
+	width:261px;
+	height:47px;
 }
 
 h2
 {
-	font-size:24px;
+	font-size:30px;
 	font-weight:bold;
 	-moz-text-shadow: 0 1px 3px #02667e;
 	-webkit-text-shadow: 0 1px 3px #02667e;
@@ -87,8 +87,9 @@ h3
 
 	p
 	{
-		font-size:20px;
-		line-height:26px;
+		font-size:26px;
+		line-height:28px;
+		margin-bottom:22px;
 		-moz-text-shadow: 0 1px 3px #02667e;
 		-webkit-text-shadow: 0 1px 3px #02667e;
 		-o-text-shadow: 0 1px 3px #02667e;
@@ -158,6 +159,17 @@ h3
 	margin-right:8px;
 	width:40px;
 	height:40px;
+}
+
+.social
+{
+	margin-top:12px;
+
+	a
+	{
+		display:inline-block;
+		margin-left:8px;
+	}
 }
 
 a:hover

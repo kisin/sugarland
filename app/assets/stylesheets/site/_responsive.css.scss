@@ -32,8 +32,13 @@
 		display:inline-block;
 		background-position:center center;
 	}
-}
 
+	.empty
+	{
+		display:none !important;
+	}
+
+}
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) 
@@ -41,7 +46,7 @@
 	.header
 	{
 		height:auto;
-		padding:40px 0;
+		padding:12px 0;
 	}
 
 	.row-fluid
@@ -69,6 +74,11 @@
 		display:inline-block;
 		background-position:center center;
 	}
+
+	.empty
+	{
+		display:none !important;
+	}	
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -78,5 +88,40 @@
 	{
 		width:90%;
 	}
-	
+
+	.empty
+	{
+		display:none !important;
+	}
+
+}
+
+
+@media (max-width: 320px) 
+{
+	h2
+	{
+		font-size:22px;
+	}
+
+	.top-text p
+	{
+		font-size:22px;
+	}
+
+	.header
+	{
+		padding:12px 0;
+	}
+
+	#signup-email, 
+	#signup-type
+	{
+		width:240px;
+	}
+
+	.empty
+	{
+		display:none !important;
+	}
 }
