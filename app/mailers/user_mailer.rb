@@ -8,13 +8,13 @@ class UserMailer < ActionMailer::Base
 
 		case grouptype
 		when "1"
-			@grouptype = "אבא סוכר"
+			@grouptype = "שוגר דדי"
 		when "2"
-			@grouptype = "אמא סוכר"
+			@grouptype = "שוגר מאמי"
 		when "3"
-			@grouptype = "בחורת סוכר"
+			@grouptype = "שוגר בייב"
 		when "4"
-			@grouptype = "בחור סוכר"
+			@grouptype = "שוגר בוי"
 		end
 		
 		mail(:to => "mysugar <#{email}>", :subject => "תודה על ההתעניינות באתר mysugar")
