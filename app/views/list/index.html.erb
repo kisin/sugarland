@@ -1,0 +1,54 @@
+<style>
+	body 
+	{
+		background-color: #fff;
+		color:#333;
+	}
+
+	#wrapper
+	{
+		width:80%;
+		margin:14px auto;
+		direction:rtl;
+	}
+
+	.table td, 
+	.table th
+	{
+		direction: rtl;
+		text-align:right;
+	}
+
+	h1
+	{
+		margin-bottom:20px;
+	}
+
+	html
+	{
+		height:inherit;
+	}
+</style>
+
+
+<div id="wrapper">
+	<h1>רשימת נרשמים</h1>
+	<table class="table table-striped table-hover">
+		<thead>
+			<tr>
+				<th>דואר אלקטרוני</th>
+				<th>סוג משתמש</th>
+				<th>תאריך הרשמה</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @leads.each do |lead| %>
+				<tr>
+					<td><%= lead.email %></td>
+					<td><%= lead.usertype %></td>
+					<td><%= lead.created_at.strftime("%d/%m/%Y בשעה %H:%M") %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>
