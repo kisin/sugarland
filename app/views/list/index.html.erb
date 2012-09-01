@@ -43,9 +43,23 @@
 		</thead>
 		<tbody>
 			<% @leads.each do |lead| %>
+<%
+	case lead.usertype
+	when "1"
+		usertype = "שוגר דדי"
+	when "2"
+		usertype = "שוגר מאמי"
+	when "3"
+		usertype = "שוגר בייב"
+	when "4"
+		usertype = "שוגר בוי"
+	else
+		usertype = lead.usertype
+	end
+%>			
 				<tr>
 					<td><%= lead.email %></td>
-					<td><%= lead.usertype %></td>
+					<td><%= usertype %></td>
 					<td><%= lead.created_at.strftime("%d/%m/%Y בשעה %H:%M") %></td>
 				</tr>
 			<% end %>
